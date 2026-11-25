@@ -1,0 +1,33 @@
+/* The page around the canvas: a dark street at night, the stall's canvas centred, one line of
+   key help beneath it. The game itself is all drawn on the canvas. */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #14121f;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px 10px 12px;
+  box-sizing: border-box;
+}
+
+canvas {
+  width: min(1280px, 100%);
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.6), 0 0 0 2px #2e2a4a;
+  background: #232038;
+}
+
+.keys {
+  color: rgba(247, 234, 210, 0.62);
+  font: 13.5px Verdana, Geneva, sans-serif;
+  margin: 12px 0 0;
+  text-align: center;
+}
